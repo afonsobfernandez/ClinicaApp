@@ -1,0 +1,37 @@
+.patient-layout {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust based on your navbar height */
+  }
+  
+  .patient-sidebar {
+    width: 250px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .patient-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .patient-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    text-decoration: none;
+    color: #495057;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .patient-nav-item:hover {
+    background: #e9ecef;
+  }
+  
+  .patient-nav-item.active {
+    background: #007bff;
+    color: white;
+  }

@@ -1,0 +1,94 @@
+.navbar {
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e8ed;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 1000;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  color: #516173;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #007bff;
+  background: #f8f9fa;
+}
+
+.nav-item.active {
+  color: #007bff;
+  background: #e8f2ff;
+  font-weight: 600;
+}
+
+.nav-item .icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .nav-item span:not(.icon) {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 8px;
+  }
+
+  .nav-item .icon {
+    margin-right: 0;
+    font-size: 20px;
+  }
+}
+
+/* Optional: Add subtle animation for icon */
+.nav-item .icon {
+  transition: transform 0.2s ease;
+}
+
+.nav-item:hover .icon {
+  transform: scale(1.1);
+}
+
+/* Adjust main content to account for navbar height */
+main {
+  margin-top: 60px;
+}
